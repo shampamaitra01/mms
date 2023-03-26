@@ -1,0 +1,43 @@
+thead:before, thead:after,
+tbody:before, tbody:after,
+tfoot:before, tfoot:after {
+  display: none;
+}
+
+
+.bodyclass {
+    padding: 1rem;
+}
+
+.responsive-table {
+    display: block;
+}
+
+[class^="day-section"] {
+    margin-bottom: 1rem;
+}
+
+.day-content {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin: -1px 0 0 -1px;
+    box-sizing: border-box;
+}
+
+p.day-content:hover {
+    background: #c8f1c5;
+}
+
+.head {
+    background: #eaeaea;
+    font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+    .responsive-table {
+        display: flex;
+    }
+    [class^="day-section"] {
+        flex-grow: 1;
+    }
+}
